@@ -56,23 +56,7 @@ void handleIr() {
      Serial.println("2");
         }
   
-
-  
-              
-//        Serial.print("element");
-//      Serial.print(irSignal[0]);
-//      Serial.print(" ");
-//      Serial.print(irSignal[1]);
-//          Serial.print(" ");
-//      Serial.print(irSignal[2]);
-//          Serial.print(" ");
-//      Serial.print(irSignal[3]);
-//           Serial.print(" ");
-//      Serial.print(irSignal[arrsize-2]);
-//              Serial.print(" ");
-//      Serial.print(irSignal[arrsize-1]);
-
-      //irsend.sendNEC(code, 32);
+//irsend.sendNEC(code, 32);
         irsend.sendRaw(irSignal, arrsize, 38);
       //irsend.sendRaw(irSignal, sizeof(irSignal) / sizeof(irSignal[0]), 38);
     }
